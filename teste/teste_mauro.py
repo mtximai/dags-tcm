@@ -120,7 +120,7 @@ def excluir_orgaos(hook_conn_id, **context):
     executar_modificacoes_sql(hook_conn_id, 'excluir_orgaos', excluidos)
 
 with DAG(
-    'teste de dag',
+    'teste_de_dag',
     default_args={'owner': 'airflow', 'retries': 1},
     schedule_interval=None,
     start_date=datetime(2023, 1, 1),
